@@ -1,8 +1,8 @@
-package com.kelvin.notesapp.activities
+package com.kelvin.contactlist.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.kelvin.notesapp.R
+import com.kelvin.contactlist.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

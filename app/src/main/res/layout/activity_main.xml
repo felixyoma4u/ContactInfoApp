@@ -4,52 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="20dp">
 
     <EditText
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Title"
-        android:textSize="16dp"
+        android:hint="Name"
+        android:textSize="18sp"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/content"
-        android:layout_width="wrap_content"
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Content"
-        android:textSize="16dp"
+        android:hint="Number"
+        android:textSize="18sp"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="@+id/contactName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintStart_toStartOf="@+id/contactName"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Save"
-        app:layout_constraintEnd_toEndOf="@+id/content"
+        app:layout_constraintEnd_toEndOf="@+id/contactNumber"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/content"
-        app:layout_constraintTop_toBottomOf="@+id/content" />
+        app:layout_constraintStart_toStartOf="@+id/contactNumber"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumber" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="TextView"
+        android:layout_marginTop="20dp"
+        android:text="Contact Book"
+        android:textSize="30sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,16 +66,14 @@
         app:layout_constraintGuide_percent="0.42" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/notes_rv"
-        android:layout_width="409dp"
-        android:layout_height="404dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:id="@+id/contacts_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save" />
-
+        app:layout_constraintTop_toBottomOf="@+id/save_button"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

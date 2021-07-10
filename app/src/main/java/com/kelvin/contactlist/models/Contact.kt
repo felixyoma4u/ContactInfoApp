@@ -1,13 +1,13 @@
-package com.kelvin.notesapp.models
+package com.kelvin.contactlist.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
 
-data class Note(
+data class Contact(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val title: String,
-    val content: String
+    val name: String,
+    val number: String
 )

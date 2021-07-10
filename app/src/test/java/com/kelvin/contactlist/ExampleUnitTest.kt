@@ -1,4 +1,4 @@
-package com.kelvin.notesapp
+package com.kelvin.contactlist
 
 import org.junit.Test
 
